@@ -1,0 +1,13 @@
+<!--pages/demo03/demo04.wxml-->
+<swiper autoplay interval="1000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+    <swiper-item>
+        <image mode="widthFix" src="https://img.alicdn.com/simba/img/TB1QyHFx4z1gK0jSZSgSuuvwpXa.jpg_q50.jpg"
+        ></image>
+        <image mode="widthFix" src="//gw.alicdn.com/imgextra/i1/83/O1CN012smkfa1CU3SgXXzOo_!!83-0-lubanu.jpg"
+        ></image>
+        <image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB1CWf9KpXXXXbuXpXXSutbFXXX.jpg_q50.jpg"
+        ></image>
+        <image mode="widthFix" src="//gw.alicdn.com/imgextra/i4/1685802/O1CN01eHaBNo1sjMYqbaJPx_!!1685802-0-lubanu.jpg"
+        ></image>
+    </swiper-item>
+</swiper>

@@ -1,0 +1,5 @@
+<input type="text" bind:input="fucker"></input>
+<view>{{num}}</view>
+<button bind:tap="handleTap" data-nigger="{{1}}" id="jia">+</button>
+<!--无法在小程序的事件中直接传参 通过自定义属性data-xxxx的形式传参-->
+<button bind:tap="handleTap" data-nigger="{{-1}}" id="jian">-</button>

@@ -1,0 +1,16 @@
+#q{
+    width: calc(750rpx*1/2);
+/*    此表达式中间不要留空格*/
+    height: 375rpx;
+    font-size: 40rpx;
+    background-color: red;
+}
+#b{
+    background-color: blue;
+}
+/*@import "../../style/common.wxss";*/
+/*引入外部wxss,用@import，只能引入相对路径*/
+image{
+    width: 150px;
+    height: 150px;
+}

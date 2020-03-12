@@ -1,0 +1,4 @@
+view{
+    color: green;
+    border: black 1px solid;
+}

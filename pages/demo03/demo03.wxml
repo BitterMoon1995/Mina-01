@@ -1,0 +1,16 @@
+<!--小程序中，不需要主动引入样式文件，只需要确保名称一样-->
+<!--演示wxss和rpx-->
+<view id="q">
+    <view id="b">周 神</view>
+</view>
+
+<!--演示text标签的属性-->
+<!--是否可选，是否解码-->
+<text selectable decode>
+    god周周神&nbsp;牛逼!!!!!!!! &lt;</text>
+
+<!--演示image标签-->
+<image src="http://chuantu.xyz/t6/723/1584000270x1033347913.jpg" mode="aspectFit"></image>
+<!--        aspectFit:长边完全显示，常用于轮播图-->
+<image src="http://chuantu.xyz/t6/723/1584000270x1033347913.jpg" mode="aspectFill"></image>
+<image src="http://chuantu.xyz/t6/723/1584000270x1033347913.jpg" mode="widthFix"></image>
