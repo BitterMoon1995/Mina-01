@@ -1,0 +1,9 @@
+<!--演示导航栏（超链接）-->
+<navigator url="/pages/demo04/demo04">God周周神！！！</navigator>
+<navigator url="/pages/index/index">Try Tabbar Pages</navigator>
+<navigator url="/pages/demo04/demo04" open-type="redirect">重定向</navigator>
+<navigator url="/pages/index/index" open-type="switchTab">Go Tabbar Pages</navigator>
+<navigator url="/pages/demo04/demo04" open-type="reLaunch">关闭所有页面并跳转</navigator>
+
+<!--演示富文本-->
+<rich-text nodes="{{html}}"></rich-text>

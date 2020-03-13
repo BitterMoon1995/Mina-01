@@ -1,0 +1,20 @@
+<!--演示按钮的样式属性功能-->
+<!--样式-->
+<button>吴雨薇死妈</button>
+<button size="mini">吴雨薇死妈</button>
+<button type="primary">吴雨薇死妈</button>
+<button type="warn">吴雨薇死妈</button>
+<button type="warn" plain>确实</button>
+<button type="primary" loading>周兵暴毙</button>
+
+<!--开放能力-->
+<button open-type="contact" >contact</button>
+<!--联系客服，只能真机调试，P32-->
+<button open-type="share">share</button>
+<button open-type="getPhoneNumber" bind:getphonenumber="getPhoneNum">getPhoneNumber</button>
+<button open-type="getUserInfo" bind:getuserinfo="getUserInfo">getUserInfo</button>
+<button open-type="launchApp">launchApp</button>
+<button open-type="openSetting">openSetting</button>
+<!--获取被问询过的权限列表。该表存在于缓存中-->
+<button open-type="feedback">feedback</button>
+<!--异常反馈，只能真机调试-->

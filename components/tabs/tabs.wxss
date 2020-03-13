@@ -1,0 +1,32 @@
+.tabs_title{
+    display: flex;
+    padding: 10rpx;
+    color: red;
+}
+.title_item{
+    background-color: yellow;
+    border: 2px black solid;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+/*    align-content: center;*/
+}
+#o{
+/*    border: 2px black solid;*/
+    display: flex;
+    justify-content: space-around;
+}
+.in{
+    height: 50rpx;
+    text-align: center;
+    line-height: 50rpx;
+}
+#i1{
+/*    background-color: red;*/
+}
+#i2{
+/*    background-color: #3E9DD6;*/
+}
+#i3{
+/*    background-color: green;*/
+}
