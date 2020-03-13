@@ -1,0 +1,17 @@
+<!--演示icon-->
+<icon type="success" color="" size="{{60}}"></icon>
+<icon type="cancel" color="" size="{{60}}"></icon>
+<icon type="download" color="#F76260" size="{{60}}"></icon>
+<!--演示单选框-->
+<radio-group bind:change="handleSelect">
+    <radio value="renyao" color="#10AEFF">男</radio>
+    <radio value="nvershen" color="#10AEFF">女</radio>
+</radio-group>
+<view>你选中的是：{{gender}}</view>
+<!--演示复选框-->
+<checkbox-group bind:change="handleBox">
+    <checkbox wx:for="{{list}}" value="{{item.value}}" wx:key="id">
+        {{item.key}}
+    </checkbox>
+</checkbox-group>
+<view>选中的语言有：{{checkedList}}</view>

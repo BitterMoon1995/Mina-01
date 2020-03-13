@@ -1,0 +1,87 @@
+<!--演示组件-->
+<!--相当于span,为行内元素，不会换行-->
+<!-- <text>聚</text>
+<text>聚</text> -->
+<!--相当于div，默认为块级元素，会换行-->
+<!-- <view>宝</view>
+<view>贝</view> -->
+
+
+<!--演示数据动态绑定和渲染-->
+<!--0.当前时间-->
+<!--<view>{{time}}</view>-->
+<!--1.字符串-->
+<view>{{msg}}</view>
+<!--2.数字-->
+<view>{{num}}</view>
+<!-- 3.bool类型 -->
+<view>是否是女人：{{isGirl}}</view>
+<!--4.对象类型-->
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>
+<view>{{person.name}}</view>
+<!--5.在标签的属性中-->
+<view data-num="{{num}}">自定义属性</view>
+<!--6.使用bool类型充当属性-->
+<!--checkbox就是复选框-->
+<view>
+<!--    字符串和花括号之间一定不要存在空格-->
+    <checkbox checked="{{isChecked}}">周神，真神</checkbox>
+    <checkbox>有点想吐</checkbox>
+</view>
+
+<!--7.表达式-->
+<view>{{1+1}}</view>
+<view>{{'1'+'1'}}</view>
+<view>{{10%2===0?'偶数':'奇数'}}</view>
+
+<!--8.列表循环-->
+<view>
+    <view wx:for="{{list}}"
+          wx:for-item="item" wx:for-index="index"
+          wx:key="id">
+        索引：{{index}} -- 值：{{item.name}}
+    </view>
+</view>
+<!--9.对象循环-->
+<view>
+    <view wx:for="{{person}}" wx:for-item="value" wx:for-index="key"
+          wx:key="age">
+        属性：{{key}} -- 值：{{value}}
+    </view>
+</view>
+<!--10.block标签(占位空标签)-->
+<!--<view>-->
+<!--    <block wx:for="{{person}}" wx:for-item="value" wx:for-index="key"-->
+<!--          wx:key="age" class="myclass">-->
+<!--        属性：{{key}} &#45;&#45; 值：{{value}}-->
+<!--    </block>-->
+<!--</view>-->
+<!--11.条件渲染-->
+<view wx:if="{{isGirl}}">用鲜血和暗影，缔结契约吧</view>
+<!--用if会把标签从页面结构直接移除-->
+<view wx:if="{{false}}">你无法逃脱死亡的阴影</view>
+<!--分支-->
+<view wx:if="{{true}}">开门法</view>
+<view wx:elif="{{true}}">死妈法</view>
+<view wx:else>死妈开门法</view>
+<!--hidden属性-->
+<view hidden>习近平死妈！</view>
+<!--用hidden不会从页面结构移除，是通过添加样式来切换显示的-->
+<view hidden="{{isGirl}}">习近平真的死妈！</view>
+<view hidden style="display:flex">近平之登基大典</view>
+<!--hidden不要和内联样式一起用，因为人家优先级最高-->
+<!--内联样式 > ID 选择器 > 类选择器 = 属性选择器 = 伪类选择器 > 标签选择器 = 伪元素选择器-->
+
+
+
+
+
+
+
+
+
+
+
+
+
