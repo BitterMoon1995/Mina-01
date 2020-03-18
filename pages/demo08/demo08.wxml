@@ -1,2 +1,8 @@
 <!--自定义组件-->
-<tabs></tabs>
+<tabs tabs="{{tabs}}" bind:itemChange="handleItemChange">
+    <!--父向子：用属性传递值-->
+    <!--子向父：用自定义事件传递值-->
+    <block wx:if="{{tabs[0].isActive}}">第0页</block>
+    <block wx:if="{{tabs[1].isActive}}">第1页</block>
+    <block wx:if="{{tabs[2].isActive}}">第2页</block>
+</tabs>

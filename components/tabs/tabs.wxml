@@ -1,13 +1,22 @@
 <view class="tabs">
+
     <view class="tabs_title">
-        <view class="title_item">要闻</view>
-        <view class="title_item">推荐</view>
-        <view class="title_item">原创</view>
+
+        <view class="title_item {{item.isActive?'active':''}}" wx:for="{{tabs}}" wx:key="id"
+        bind:tap="handleItemTap" data-index="{{index}}"
+        >
+            {{item.name}}
+        </view>
+
     </view>
-    <view class="tabs_content">内容</view>
+
+    <view class="tabs_content">
+        <slot></slot>
+    </view>
 </view>
-<view id="o">
-    <view class="in" id="i1">要闻</view>
-    <view class="in" id="i2">推荐</view>
-    <view class="in" id="i3">原创</view>
-</view>
+
+<!--<view id="o">-->
+<!--    <view class="in" id="i1">要闻</view>-->
+<!--    <view class="in" id="i2">推荐</view>-->
+<!--    <view class="in" id="i3">原创</view>-->
+<!--</view>-->

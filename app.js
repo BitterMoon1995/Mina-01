@@ -35,5 +35,17 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+  onError(err){
+    wx.navigateTo({
+      url:'/pages/demo05/demo05'
+    })
+  },
+  onShow(){
+
+  },
+  onHide(){
+
+  },
+
 })

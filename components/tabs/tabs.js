@@ -1,5 +1,17 @@
 Component({
-    properties: {},
-    data: {},
-    methods: {}
+    properties: {
+        tabs:{
+            type:Array,
+            value:[]
+        }
+    },
+    data: {
+
+    },
+    methods: {
+        handleItemTap(e){
+            const {index}=e.currentTarget.dataset
+            this.triggerEvent("itemChange",{index})
+        }
+    }
 });
